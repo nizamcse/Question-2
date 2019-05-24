@@ -13,16 +13,18 @@
 require_once "Vehicle.php";
 require_once "Car.php";
 require_once "Plane.php";
-require_once "VehicleFactory.php";
+require_once "VehicleAdapter.php";
 
 
-$car = new VehicleFactory(new Car);
+$car = new VehicleAdapter(new Car);
 $car->getNumberOfPassengers();
 $car->getNumberOfWheels();
 $car->runWithGas();
 
+// For Plane
 
-$plane = new VehicleFactory(new Plane);
+$plane = new VehicleAdapter(new Plane);
 $plane->getNumberOfPassengers();
 $plane->getNumberOfWheels();
 $plane->runWithGas();
+

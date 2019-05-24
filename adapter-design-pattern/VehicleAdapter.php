@@ -7,7 +7,7 @@
  */
 require_once "Vehicle.php";
 
-class VehicleFactory {
+class VehicleAdapter {
     private $source;
 
     public function __construct(Vehicle $source) {
